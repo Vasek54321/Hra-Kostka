@@ -8,6 +8,7 @@ let trn;
 let rounds = [];
 let rnds = [];
 
+//prirazeni audio nahravek k k,n,p
 let vicAudio = new Audio();
 vicAudio.src = "./img/victory.mp3";
 let failAudio =  new Audio();
@@ -18,6 +19,7 @@ function animation() {
     turn = Math.ceil(Math.random() * 6);
     dice.src = `img/kostka0${turn}.png`;
 }
+//animace k,n,p generace nahodneho hodu
 function animace() {
     trn = Math.ceil(Math.random() * 3);
     img.src = `img/knp/knp${trn}.png`;
@@ -71,7 +73,7 @@ hrej.addEventListener('click', function() {
         vysledek.innerHTML = staty();
     }
 })
-
+//funkce pro kamen
 k.addEventListener('click', function() {
     hrej.innerText = 'START';
     clearInterval(cas);
@@ -89,6 +91,7 @@ k.addEventListener('click', function() {
         vysledek.innerHTML = `<p>REMÍZA</p>`;
     }
 })
+//funkce pro nuzky
 n.addEventListener('click', function() {
     hrej.innerText = 'START';
     clearInterval(cas);
@@ -106,6 +109,7 @@ n.addEventListener('click', function() {
         vysledek.innerHTML = `<p>REMÍZA</p>`;
     }
 })
+// funkce pro papir
 p.addEventListener('click', function() {
     hrej.innerText = 'START';
     clearInterval(cas);
