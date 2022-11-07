@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <title>Hra kostky</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+    <section class="bg-dark">
+        <header class="jumbotron bg-dark">
+            <h1 class="display-3 text-light text-center" id="hlava">Kostka</h1>
+        </header>
+        <main class="container">
+            <div class="m-3 text-center">
+                <img src="img/kostka06.png" alt="kostka" id="dice">
+            </div>
+            <div id="result" class="alert alert-dark">Výsledky</div>
+            <div>
+                <button class="btn btn-danger" id="play">HREJ</button>
+            </div>
+        </main>
+    </section>
+    <section class="bg-dark">
+        <header class="jumbotron bg-dark">
+            <h1 class="display-3 text-light text-center" id="hlava">Kámen, Nůžky, Papír</h1>
+        </header>
+        <main class="container">
+            <div class="m-3 text-center">
+                <img src="img/knp/knp1.png" alt="kostka" id="img">
+            </div>
+            <div id="vysledek" class="alert alert-dark">Výsledek</div>
+            <div class="m-3 row text-center">
+                <p class="text-center">
+                    <h3 class="text-white">Tvůj výběr: </h3>
+                    <button class=" btn-success" id="k"><h2>Kámen</h2></button>
+                    <button class=" btn-success" id="n"><h2>Nůžky</h2></button>
+                    <button class=" btn-success" id="p"><h2>Papír</h2></button>
+                </p>
+            </div>
+            <div>
+                <button class="btn btn-danger" id="hrej">START</button>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <p class="p-2 text-white"><i class="fa fa-copyright" aria-hidden="true">Copyright © Jáchym Václav Hanke IT2</i></p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/play.js"></script>
+</body>
+
+</html>
